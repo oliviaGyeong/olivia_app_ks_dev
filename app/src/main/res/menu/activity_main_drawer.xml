@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/loginScene"
+            android:title="@string/title_fragment_login" />
+        <item
+            android:id="@+id/mainScene"
+            android:title="@string/title_fragment_main" />
+        <item
+            android:id="@+id/cancelPaymentScene"
+            android:title="@string/title_fragment_cancel" />
+        <item
+            android:id="@+id/icReadWaitScene"
+            android:title="@string/title_fragment_icreadwait" />
+        <item
+            android:id="@+id/icReadFailScene"
+            android:title="@string/title_fragment_icreadfail" />
+        <item
+            android:id="@+id/msrSwipeWaitScene"
+            android:title="@string/title_fragment_msrswipewait" />
+        <item
+            android:id="@+id/signatureScene"
+            android:title="@string/title_fragment_signature" />
+        <item
+            android:id="@+id/paymentProgressScene"
+            android:title="@string/title_fragment_paymentProgress" />
+        <item
+            android:id="@+id/dealCompleteScene"
+            android:title="@string/title_fragment_dealComplete" />
+	<item
+            android:id="@+id/receipt_print_Scene"
+            android:title="@string/title_fragment_print" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

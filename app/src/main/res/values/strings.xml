@@ -1,0 +1,254 @@
+﻿<resources>
+    <!-- Main Activity Strings -->
+    <string name="app_name">PM-POS</string>
+    <string name="menu_settings">Admin</string>
+    <string name="menu_info">Info</string>
+
+    <string name="msg_version_suffix">Unknown</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!--VAN IP-->
+    <string name="vanhost_ip_address_text">211.192.167.87</string>
+    <string name="vanhost_port_number_text">10268</string>
+    <!--<string name="vanhost_test_ip_address_text">192.168.123.231</string>-->
+    <!--<string name="vanhost_test_port_number_text">21000</string>-->
+    <string name="van_serial_num">1000000007</string>
+    <string name="van_buisness_num">2148631917</string>
+    <string name="van_terminal_id">0710000001</string>
+
+    <string name="text_label_approval_choice">Select a transaction</string>
+    <string name="text_label_sum_of_money">Sum of money</string>
+    <string name="text_label_payment_option">Payment option</string>
+    <string name="radio_payment_option_card">Credit card</string>
+    <string name="radio_payment_option_cash_credit">Cash receipt</string>
+    <string name="text_label_service_charge">Service charge</string>
+    <string name="text_label_tax">Tax</string>
+    <string name="text_label_monthly_installment_plan">Monthly installment plan</string>
+    <string name="text_label_cash_receipt_type">Cash receipt type</string>
+    <string name="radio_cash_receipt_type_individual">Individual</string>
+    <string name="radio_cash_receipt_type_corporation">Corporation</string>
+    <string name="radio_approval">Approval</string>
+    <string name="radio_cancel">Cancel</string>
+    <string name="text_label_keyin">KeyIn</string>
+    <string name="hint_edit_keyin">RRN or Phone or Business number</string>
+
+    <string name="dialog_error_msg_empty_sum_of_money">Please enter the sum of money value.</string>
+    <string name="dialog_error_msg_empty_payment_option">Please select Credit card or Cash receipt.</string>
+    <string name="dialog_error_msg_empty_monthly_installment_plan">Please enter the monthly installment plan value.</string>
+    <string name="dialog_error_msg_empty_cash_receipt_type">Please select Individual or Corporation.</string>
+    <string name="dialog_error_msg_empty_approval_number">Please enter the Approval number.</string>
+    <string name="dialog_error_msg_empty_approval_date">Please enter the Approval date.</string>
+    <string name="dialog_error_msg_recv_reader_data_fail">PM1100LH data fail</string>
+    <string name="dialog_error_msg_recv_reader_data_timeout">PM1100LH data timeout</string>
+    <string name="dialog_error_msg_recv_van_data_fail">VAN data data fail</string>
+    <string name="dialog_error_msg_recv_van_data_timeout">VAN data timeout</string>
+    <string name="dialog_error_msg_recv_van_server_error">VAN server error</string>
+    <string name="dialog_success_msg">The transaction result is successful.</string>
+    <string name="dialog_error_msg_length_individual_keyin">Please enter RRN(13 chars) or Phone number(11 chars)</string>
+    <string name="dialog_error_msg_length_corporation_keyin">Please enter Business number(10 chars)</string>
+    <string name="dialog_error_msg_no_value_monthly_installment_plan">Don\'t enter the number of installments for less than 50,000 won.</string>
+
+    <string name="dialog_builder_notice_title">Notice</string>
+    <string name="dialog_builder_notice_msg_error_code_read_ic_again">Error code: 09.\nYou had to read IC card but you read MS card.\nPlease try to read IC card again by touching the ok button.</string>
+    <string name="dialog_builder_notice_msg_error_code_read_fail">Error code: 10.\n This card can not be processed</string>
+    <string name="dialog_builder_notice_msg_error_code_read_ms_again">Error code: 11.\nPlease try to read card again </string>
+
+
+    <!--signaturePopup -->
+    <string name="dialog_signature_title">Please sign</string>
+
+    <string name="title_fragment_login">Login scene</string>
+    <string name="title_fragment_main">Payment scene</string>
+    <string name="title_fragment_cancel">Cancel payment scene</string>
+    <string name="title_fragment_icreadwait">IC card read wait scene</string>
+    <string name="title_fragment_icreadfail">IC card read fail scene</string>
+    <string name="title_fragment_msrswipewait">MS card swipe wait scene</string>
+    <string name="title_fragment_paymentProgress">Payment progress scene</string>
+    <string name="title_fragment_signature">Signature scene</string>
+    <string name="title_fragment_dealComplete">Deal complete scene</string>
+    <string name="title_fragment_print">Receipt Print scene</string>
+
+    <string name="text_label_read_ic_card">Please read IC card.</string>
+    <string name="text_label_swipe_ms_card">Please swipe MS card.</string>
+    <string name="text_label_error_msg"></string>
+    <string name="text_label_payment_progress">Payment is in progress.\nPlease wait.</string>
+    <string name="text_label_result_msg">If you see the message, the payment is not in progress.</string>
+    <string name="text_label_approval_number">Approval number</string>
+    <string name="text_label_approval_date">Approval date</string>
+
+    <string name="btn_label_ok">Ok</string>
+    <string name="btn_label_cancel">Cancel</string>
+    <string name="btn_label_clear">Clear</string>
+    <string name="btn_label_finish">Finish</string>
+    <string name="btn_label_approval">Ok</string>
+    <string name="btn_label_cancel_input">Clear</string>
+    <string name="btn_label_cancel_payment">Cancel payment</string>
+    <string name="btn_label_continue_msr">Continue MSR</string>
+    <string name="btn_label_complete">Complete</string>
+    <string name="btn_label_btn_print">Receipt print</string>
+
+    <string name="msg_error_response_code_08">IC card reading failure</string>
+    <string name="msg_error_response_code_11">MS card reading failure</string>
+
+    <string name="text_label_login_password_hint">Password</string>
+    <string name="text_label_login_forgot_password_title">Change Password?</string>
+    <string name="text_label_login_sign_in_title">Sign in</string>
+    <string name="dialog_builder_change_password_title">Change Password</string>
+    <string name="text_label_login_current_password_hint">Current password</string>
+    <string name="text_label_login_new_password_hint">New password</string>
+    <string name="text_label_login_retry_new_password_hint">Retry new password</string>
+    <string name="dialog_error_msg_pwd_empty">Please Enter the password.</string>
+    <string name="dialog_error_msg_current_pwd_not_same">The password is incorrect!</string>
+    <string name="dialog_error_msg_current_pwd_empty">Please Enter the current password!</string>
+    <string name="dialog_error_msg_new_pwd_empty">Please Enter the new password!</string>
+    <string name="dialog_error_msg_retry_pwd_empty">Please Enter the retry new password!</string>
+    <string name="dialog_error_msg_current_pwd_not_same_as_user_pwd">The current password is not same as your password!</string>
+    <string name="dialog_error_msg_new_pwd_not_same_as_retry_pwd">The new password is not same as the retry new password!</string>
+
+    <item name="visible" type="id" />
+    <item name="masked" type="id" />
+
+    <!--<string name="text_lable_device_authorization_number">Device authorization number :</string>-->
+    <string name="text_lable_device_authorization_number">H/W :</string>
+    <string name="text_value_device_authorization_number_default">Unknown</string>
+    <string name="text_lable_device_app_number">S/W :</string>
+    <string name="text_lable_device_app_number_default">######PM-POS1001</string>
+
+    <!--Receipt Print String  -->
+    <string name="receipt_data_pay_in_full">pay in full</string>
+    <string name="receipt_data_in_installments">in installments</string>
+
+    <!-- Admin Activity Strings -->
+    <string name="admin_activity">Admin Menu</string>
+
+    <string name="title_reuslt_text">Result</string>
+    <string name="caution_message_text">This menu contains functions for administrators, so please pay attention to the purpose and method of use.</string>
+    <string name="buisnessnum_text">Input Buisness Number</string>
+    <string name="btn_label_update_fk">FK Update</string>
+    <string name="btn_label_update_fw">Firmware Update</string>
+    <string name="btn_label_run_self_protection">Run Self-protection</string>
+    <string name="btn_label_check_self_protection_log">Check Self-protection log</string>
+    <string name="btn_label_mutual_authentication">Mutual authentication</string>
+    <string name="btn_label_download_device">Device Download</string>
+
+    <string name="btn_label_device_factory_reset">Device factory reset</string>
+    <string name="btn_label_ip_settings"> IP Settings</string>
+    <string name="btn_label_pwd_settings">Password change</string>
+
+    <string name="tx_buisness_num">BuisnessNumber</string>
+    <string name="tx_store_info">Store Info</string>
+    <string name="tx_teminal_id">Terminal ID</string>
+    <string name="tx_serial_num">Serial Number</string>
+
+    <string name="edtx_input_buisness_num">InputBuisnessNumber</string>
+    <string name="edtx_input_buisness_num_hint">Input BuisnessNumber </string>
+    <string name="edtx_retry_buisness_num_hint">Re try input BuisnessNumber</string>
+    <string name="edtx_input_store_info_hint">Input Store Info</string>
+    <string name="edtx_input_teminal_id_hint">Input Terminal ID</string>
+    <string name="edtx_input_serial_num_hint">Input Serial Number</string>
+    <string name="splog_title">Self protection Log</string>
+    <string name="splog_message"> </string>
+    <string name="splog_result">Result: </string>
+    <string name="splog_time">Time: </string>
+
+    <!-- ip seettings popup-->
+    <string name="tx_ip">IP</string>
+    <string name="tx_port">PORT</string>
+    <string name="edtx_input_ip_hint">211.192.167.87</string>
+    <string name="edtx_input_port_hint">10081</string>
+    <string name="title_ip_settings">IP Settings</string>
+    <!--is Not Terminal Download popup-->
+    <string name="dialog_error_title_down_popup"> </string>
+    <string name="dialog_error_msg_down_popup">You must download it.</string>
+    <!-- self Protection Fail popup-->
+    <string name="dialog_error_title_integrity_popup"> </string>
+    <string name="dialog_error_msg_integrity_popup">Please A/S </string>
+
+    <string name="dialog_error_msg_unknown_device_authnum">Unknown device authorization number</string>
+    <string name="dialog_error_msg_rooting_device">Rooted device </string>
+    <string name="dialog_error_msg_can_not_transaction">Can not proceed with the transaction</string>
+
+
+    <!-- Updata FW  popup-->
+    <string name="update_fw_msg">Firmware Updating... </string>
+    <string name="update_fw_title">f/W Updat</string>
+    <string name="update_fw_msg_complete">complete</string>
+    <string name="update_fw_fail_read_bin">Can not read the binary file.</string>
+    <string name="update_fw_fail_permission_denied">permission denied.</string>
+
+    <string name="result_download_success">Download Success</string>
+    <string name="result_download_fail">Download Fail</string>
+    <string name="result_ack">ACK</string>
+    <string name="result_nak">NAK</string>
+    <string name="success">Success</string>
+    <string name="fail">Fail</string>
+
+    <string name="result_icreader_make_data_fail">Error: failed make rdi packet</string>
+    <string name="result_icreader_data_fail">Error: failed to read data from IC Reader</string>
+    <string name="result_icreader_timeout"> Error: timeout from IC Reader</string>
+
+    <string name="result_van_make_data_fail">Error: failed make van packet</string>
+    <string name="result_van_data_fail">Error: failed to read data from Van host</string>
+    <string name="result_van_timeout"> Error: timeout from Van host </string>
+    <string name="result_van_connection_error">Error: connection Error</string>
+
+    <!--TCPIPClass connection Error msg  -->
+    <string name="vanhost_msg_cnnection_error">VAN host connection Error</string>
+    <string name="vanhost_msg_data_ok">Success to read data from Van host</string>
+    <string name="vanhost_msg_data_fail">Failed to read data from Van host</string>
+    <string name="vanhost_msg_timeout"> Timeout from Van host  </string>
+
+    <!-- Init toast message -->
+    <string name="toast_msg_device_info">Device information request complete</string>
+    <string name="toast_msg_device_info_not_have_fk">You do not have a security key.Proceed with security key update.</string>
+    <string name="toast_msg_selftest_ok">Successful integrity verification</string>
+    <string name="toast_msg_network_cancel">network_cancel</string>
+
+    <!-- test btn text VanConn -->
+    <string name="btn_label_test_VanConn">test_VanConn</string>
+    <string name="btn_label_test_VanDisConn">test_VanDisConn</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <!--Demon-->
+    <string name="demon_no_response_packet">No response from the daemon</string>
+    <string name="toast_msg_ic_card_redding">Please read IC card</string>
+    <string name="toast_msg_ms_card_redding">Please read MS card.</string>
+    <string name="toast_msg_van_communicating">Communicating with van</string>
+    <string name="toast_msg_payment_successful">Payment successful</string>
+    <string name="toast_msg_payment_fail">Payment fail</string>
+    <string name="toast_msg_daemon_data_fail">Deamon data fail</string>
+
+    <string name="title_activity_signture_dialog">SigntureDialog</string>
+    <string name="title_activity_dialog_bg">DialogBGActivity</string>
+
+    <!--Receipt print-->
+    <string name="print_payment_approval_title">payment approval complete</string>
+    <string name="print_payment_cancel_title">payment cancel complete</string>
+
+    <string name="print_instalment_pay_in_full">pay in full</string>
+    <string name="print_card_type_1">credit</string>
+    <string name="print_card_type_2">check</string>
+    <string name="print_card_type_3">girf</string>
+    <string name="print_card_type_4">prepayment</string>
+
+    <string name="print_start_star">**********"</string>
+    <string name="print_shop_name">shop name     :</string>
+    <string name="print_business_no">business no  :</string>
+    <string name="print_shop_owoner_name">shop owoner name  :</string>
+    <string name="print_shop_tel_number">shop tel number:</string>
+    <string name="print_shop_address">shop address:</string>
+    <string name="print_date_time">date     :</string>
+
+    <string name="print_type_1">---------------------------</string>
+    <string name="print_acquier_code">acquier code  :</string>
+    <string name="print_acquier_name">acquier name  :</string>
+    <string name="print_card_type">card type     :</string>
+    <string name="print_balance">prepayment balance    :</string>
+    <string name="print_instalment">instalment    :</string>
+    <string name="print_card_no">card no   :</string>
+    <string name="print_approval_no">approval no   :</string>
+    <string name="print_type_2">============================</string>
+    <string name="print_amount">amount    :</string>
+    <string name="print_fee">fee    :</string>
+    <string name="print_surTax">surtax     :</string>
+
+</resources>

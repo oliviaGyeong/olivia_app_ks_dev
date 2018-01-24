@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textSumOfMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_sum_of_money"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp" />
+
+    <EditText
+        android:id="@+id/editSumOfMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/textSumOfMoney"
+        android:ems="10"
+        android:hint="20000"
+        android:inputType="number"
+        android:singleLine="true"
+        android:maxLength="10" />
+
+    <TextView
+        android:id="@+id/textApprovalNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textSumOfMoney"
+        android:layout_below="@+id/editSumOfMoney"
+        android:layout_marginTop="10dp"
+        android:text="@string/text_label_approval_number" />
+
+    <EditText
+        android:id="@+id/editApprovalNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editSumOfMoney"
+        android:layout_below="@+id/editSumOfMoney"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="12" />
+
+    <TextView
+        android:id="@+id/textApprovalDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textApprovalNumber"
+        android:layout_below="@+id/editApprovalNumber"
+        android:layout_marginTop="12dp"
+        android:text="@string/text_label_approval_date" />
+
+    <EditText
+        android:id="@+id/editApprovalDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editApprovalNumber"
+        android:layout_below="@+id/editApprovalNumber"
+        android:ems="10"
+        android:hint="yyyyMMdd"
+        android:inputType="date"
+        android:singleLine="true"
+        android:maxLength="8" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_layout_height"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/btn_label_cancel"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnOk"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="?android:attr/selectableItemBackground"
+            android:textAllCaps="false"
+            android:text="@string/btn_label_ok" />
+
+    </LinearLayout>
+
+</RelativeLayout>

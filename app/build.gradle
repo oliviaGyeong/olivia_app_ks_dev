@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'platform'
+            keyPassword 'pointmobile_omap3pm'
+            storeFile file('/home/olivia/APK/android_6.0.1_singedKey/platform.jks')
+            storePassword 'pointmobile_omap3pm'
+        }
+    }
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "device.apps.pmpos"
+        minSdkVersion 21
+        targetSdkVersion 21
+        externalNativeBuild {
+            cmake {
+                cppFlags "-frtti -fexceptions"
+            }
+        }
+        multiDexEnabled true
+//        signingConfig signingConfigs.config
+        signingConfig signingConfigs.config
+    }
+//    dexOptions {
+//        javaMaxHeapSize = "4g"
+//    }
+    buildTypes {
+        debug {
+//            consumerProguardFiles 'proguard-gson.pro', 'proguard-rules.pro'
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+    productFlavors {
+//        demo {
+//            versionName "1.1-demo"
+//        }
+//        full {
+//        }
+    }
+//    olivia 171124 release build >> lintError option
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support:support-v4:26.+'
+    compile 'com.android.support:design:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    //    compile 'com.android.support:multidex:1.0.0'
+}
+//olivia 180117 logcat view korean
+//tasks.withType(JavaCompile) {
+//    options.encoding = 'UTF-8'
+//}

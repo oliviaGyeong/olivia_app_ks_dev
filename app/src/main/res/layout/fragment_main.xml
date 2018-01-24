@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/all_llayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/version_num_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_toStartOf="@+id/textDeviceAuthNum"-->
+                <!--android:text="@string/text_lable_device_authorization_number" />-->
+
+                <TextView
+                    android:id="@+id/textDeviceAuthNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/approvalChoiceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/version_num_layout"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_top_margin">
+
+        <TextView
+            android:id="@+id/textApprovalChoice"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/radioGroupApprovalCancel"
+            android:text="@string/text_label_approval_choice" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupApprovalCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/textApprovalChoice"
+            android:layout_alignEnd="@dimen/activity_radio_btn_end_margin"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/approvalRadioBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/radio_approval" />
+
+            <RadioButton
+                android:id="@+id/cancelRadioBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="@string/radio_cancel" />
+
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/amountLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/approvalChoiceLayout"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/textSumOfMoney"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editSumOfMoney"
+            android:text="@string/text_label_sum_of_money" />
+
+        <EditText
+            android:id="@+id/editSumOfMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="10"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/approvalLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amountLayout"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin">
+
+            <LinearLayout
+                android:id="@+id/commonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textPaymentOption"
+                        android:layout_width="138dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_label_payment_option" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupPaymentOption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignEnd="@dimen/activity_radio_btn_end_margin"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/creditCardRadioBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/radio_payment_option_card" />
+
+                        <RadioButton
+                            android:id="@+id/cashReceiptRadioBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/radio_payment_option_cash_credit" />
+                    </RadioGroup>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textServiceCharge"
+                        android:layout_width="138dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/editServiceCharge"
+                        android:text="@string/text_label_service_charge" />
+
+                    <EditText
+                        android:id="@+id/editServiceCharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:maxLength="9"
+                        android:singleLine="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textTax"
+                        android:layout_width="138dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/editTax"
+                        android:text="@string/text_label_tax" />
+
+                    <EditText
+                        android:id="@+id/editTax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:maxLength="9"
+                        android:singleLine="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/creditOrCashLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/creditCardLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/textMonthInstallmentPlan"
+                            android:layout_width="138dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:text="@string/text_label_monthly_installment_plan" />
+
+                        <EditText
+                            android:id="@+id/editMonthlyInstallmentPlan"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/textMonthInstallmentPlan"
+                            android:ems="10"
+                            android:hint="00"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:singleLine="true" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/cashReceiptLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/cashReceiptType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_label_cash_receipt_type" />
+
+                        <RadioGroup
+                            android:id="@+id/radioGroupCashReceiptType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginEnd="@dimen/activity_radio_btn_end_margin"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/individualRadioBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="@string/radio_cash_receipt_type_individual" />
+
+                            <RadioButton
+                                android:id="@+id/corporationRadioBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:text="@string/radio_cash_receipt_type_corporation" />
+
+                        </RadioGroup>
+
+                        <TextView
+                            android:id="@+id/textKeyIn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/editKeyIn"
+                            android:text="@string/text_label_keyin" />
+
+                        <EditText
+                            android:id="@+id/editKeyIn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_below="@+id/radioGroupCashReceiptType"
+                            android:ems="10"
+                            android:hint="@string/hint_edit_keyin"
+                            android:inputType="number"
+                            android:maxLength="13"
+                            android:singleLine="true" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- for cancel-->
+        <RelativeLayout
+            android:id="@+id/cancelLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amountLayout"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin">
+
+                <TextView
+                    android:id="@+id/textApprovalDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/editApprovalDate"
+                    android:text="@string/text_label_approval_date" />
+
+                <EditText
+                    android:id="@+id/editApprovalDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:ems="10"
+                    android:hint="yyyyMMdd"
+                    android:inputType="date"
+                    android:maxLength="8"
+                    android:singleLine="true" />
+
+
+
+                <TextView
+                    android:id="@+id/textApprovalNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/editApprovalNumber"
+                    android:text="@string/text_label_approval_number" />
+
+                <EditText
+                    android:id="@+id/editApprovalNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editApprovalDate"
+                    android:layout_alignParentEnd="true"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="12" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_layout_height"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:orientation="horizontal">
+            <!--    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_layout_height"
+                    android:orientation="horizontal"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true">-->
+
+            <Button
+                android:id="@+id/btnCancel"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@drawable/outline"
+                android:text="@string/btn_label_cancel_payment"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnClear"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@drawable/outline"
+                android:text="@string/btn_label_cancel_input"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnOk"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@drawable/outline"
+                android:text="@string/btn_label_approval"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

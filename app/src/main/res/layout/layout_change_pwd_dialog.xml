@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5fb0c9"
+    android:elevation="4dp"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffff">
+
+        <EditText
+            android:id="@+id/editCurrentPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:maxLength="4"
+            android:hint="@string/text_label_login_current_password_hint"
+            android:inputType="numberPassword" />
+
+        <EditText
+            android:id="@+id/editNewPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="4"
+            android:hint="@string/text_label_login_new_password_hint"
+            android:inputType="numberPassword" />
+
+        <EditText
+            android:id="@+id/editRetryNewPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="4"
+            android:hint="@string/text_label_login_retry_new_password_hint"
+            android:inputType="numberPassword" />
+
+    </LinearLayout>
+
+</LinearLayout>

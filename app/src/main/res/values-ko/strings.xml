@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main Activity Strings -->
+    <string name="menu_settings">관리자</string>
+    <string name="menu_info">앱 정보</string>
+
+    <string name="msg_version_suffix">알수없음</string>
+
+    <string name="text_label_approval_choice">거래 선택</string>
+    <string name="text_label_sum_of_money">금액</string>
+    <string name="text_label_payment_option">결제방법</string>
+    <string name="radio_payment_option_card">신용카드</string>
+    <string name="radio_payment_option_cash_credit">현금영수증</string>
+    <string name="text_label_service_charge">봉사료</string>
+    <string name="text_label_tax">세금</string>
+    <string name="text_label_monthly_installment_plan">할부</string>
+    <string name="text_label_cash_receipt_type">현금영수증 종류</string>
+    <string name="radio_cash_receipt_type_individual">개인</string>
+    <string name="radio_cash_receipt_type_corporation">법인</string>
+    <string name="radio_approval">결제 승인</string>
+    <string name="radio_cancel">결제 취소</string>
+    <string name="text_label_keyin">KeyIn</string>
+    <string name="hint_edit_keyin">주민번호, 폰번호, 사업자번호 </string>
+
+    <string name="dialog_error_msg_empty_sum_of_money">금액을 입력해주세요.</string>
+    <string name="dialog_error_msg_empty_payment_option">신용카드와 현금영수증 중 하나를 선택해주세요.</string>
+    <string name="dialog_error_msg_empty_monthly_installment_plan">할부 개월수를 입력해주세요.</string>
+    <string name="dialog_error_msg_empty_cash_receipt_type">개인과 법인 중 하나를 선택해주세요.</string>
+    <string name="dialog_error_msg_empty_approval_number">승인번호를 입력해주세요.</string>
+    <string name="dialog_error_msg_empty_approval_date">승인일자를 입력해주세요.</string>
+
+    <string name="dialog_error_msg_recv_reader_data_fail">PM1100LH 데이타 실패</string>
+    <string name="dialog_error_msg_recv_reader_data_timeout">PM1100LH 데이타 타임아웃</string>
+
+    <string name="dialog_error_msg_recv_van_data_fail">VAN 데이타 실패</string>
+    <string name="dialog_error_msg_recv_van_data_timeout">VAN 데이타 타임아웃</string>
+
+    <string name="dialog_error_msg_recv_van_server_error">VAN 서버 에러</string>
+    <string name="dialog_success_msg">거래결과 성공.</string>
+    <string name="dialog_error_msg_length_individual_keyin">주민번호 13자리 또는 폰번호 11자리를 입력해주세요.</string>
+    <string name="dialog_error_msg_length_corporation_keyin">사업자번호 10자리를 입력해주세요.</string>
+    <string name="dialog_error_msg_no_value_monthly_installment_plan">5만원 미만은 할부 개월수를 입력하지 마십시오.</string>
+
+    <string name="dialog_builder_notice_title">공지</string>
+    <string name="dialog_builder_notice_msg_error_code_read_ic_again">에러 코드: 09.\nIC 카드를 읽어야 하는데 MS 카드를 읽었기 때문입니다.\nok 버튼을 눌러 IC 카드를 다시 읽어 주세요.</string>
+    <string name="dialog_builder_notice_msg_error_code_read_fail">에러 코드: 10.\n 카드 처리 불가 카드입니다.</string>
+    <string name="dialog_builder_notice_msg_error_code_read_ms_again">에러 코드: 11.\nMS 카드 읽기 실패 \nok 카드를 다시 읽어 주세요.</string>
+
+    <string name="msg_error_response_code_08">에러 코드: 08.\nIC카드정보를 읽어 올 수 없습니다. MS로 시도해주세요.</string>
+    <string name="msg_error_response_code_11">에러 코드: 11.\nMS카드정보를 읽어 올 수 없습니다. \nMS로 다시 시도해주세요.</string>
+
+    <!--signaturePopup -->
+    <string name="dialog_signature_title">서명하세요.</string>
+
+    <string name="title_fragment_login">로그인 화면</string>
+    <string name="title_fragment_main">결제 화면</string>
+    <string name="title_fragment_cancel">결제승인취소 화면</string>
+    <string name="title_fragment_icreadwait">IC카드입력대기 화면</string>
+    <string name="title_fragment_icreadfail">IC카드입력실패 화면</string>
+    <string name="title_fragment_msrswipewait">MS카드입력대기 화면</string>
+    <string name="title_fragment_paymentProgress">결제진행 화면</string>
+    <string name="title_fragment_signature">서명입력 화면</string>
+    <string name="title_fragment_dealComplete">거래완료 화면</string>
+    <string name="title_fragment_print">영수증 출력 화면</string>
+
+    <string name="text_label_read_ic_card">IC 카드를 읽혀주세요.</string>
+    <string name="text_label_swipe_ms_card">MS 카드를 읽혀주세요.</string>
+    <string name="text_label_payment_progress">결제진행중입니다.\n기다려주세요.</string>
+    <string name="text_label_approval_number">승인번호</string>
+    <string name="text_label_approval_date">승인일자</string>
+
+    <string name="btn_label_ok">확인</string>
+    <string name="btn_label_cancel">취소</string>
+    <string name="btn_label_clear">초기화</string>
+    <string name="btn_label_finish">종료</string>
+    <string name="btn_label_approval">확인</string>
+    <!--<string name="btn_label_approval">결제승인</string>-->
+    <string name="btn_label_cancel_input">입력취소</string>
+    <string name="btn_label_cancel_payment">결제취소</string>
+    <string name="btn_label_continue_msr">MSR결제 계속</string>
+    <string name="btn_label_complete">완료</string>
+    <string name="btn_label_btn_print">영수증 출력</string>
+
+    <string name="text_label_login_password_hint">비밀번호</string>
+    <string name="text_label_login_forgot_password_title">비밀번호 변경?</string>
+    <string name="text_label_login_sign_in_title">로그인</string>
+    <string name="dialog_builder_change_password_title">비밀번호 변경</string>
+    <string name="text_label_login_current_password_hint">현재 비밀번호</string>
+    <string name="text_label_login_new_password_hint">새로운 비밀번호</string>
+    <string name="text_label_login_retry_new_password_hint">새로운 비밀번호 재입력</string>
+    <string name="dialog_error_msg_pwd_empty">비밀번호를 입력해주세요!</string>
+    <string name="dialog_error_msg_current_pwd_not_same">비밀번호가 틀립니다!</string>
+    <string name="dialog_error_msg_current_pwd_empty">현재 비밀번호를 입력해주세요!</string>
+    <string name="dialog_error_msg_new_pwd_empty">새로운 비밀번호를 입력해주세요!</string>
+    <string name="dialog_error_msg_retry_pwd_empty">새로운 비밀번호 재입력을 해주세요!</string>
+    <string name="dialog_error_msg_current_pwd_not_same_as_user_pwd">현재 입력한 비밀번호가 당신의 비밀번호와 다릅니!</string>
+    <string name="dialog_error_msg_new_pwd_not_same_as_retry_pwd">새로운 비밀번호와 재입력한 비밀번호가 다릅니다!</string>
+
+    <string name="text_lable_device_authorization_number">단말 인증 번호 :</string>
+    <string name="text_value_device_authorization_number_default">알 수 없음</string>
+    <string name="text_lable_device_app_number">POINT앱 버전 :</string>
+
+    <!--Receipt Print String  -->
+    <string name="receipt_data_pay_in_full">일시불</string>
+    <string name="receipt_data_in_installments">할부</string>
+
+
+    <!-- Admin Activity Strings -->
+    <string name="admin_activity">관리자 메뉴</string>
+
+    <string name="title_reuslt_text">결과</string>
+    <string name="caution_message_text">이 메뉴는 관리자를 위한 기능을 포함하고 있으니, 사용에 주의하십시오.</string>
+    <string name="buisnessnum_text">사업자번호 입력</string>
+    <string name="btn_label_update_fk">FK 업데이트</string>
+    <string name="btn_label_update_fw">펌웨어 업데이트</string>
+    <string name="btn_label_run_self_protection">자체보호 실행</string>
+    <string name="btn_label_check_self_protection_log">자체보호 로그조회</string>
+    <string name="btn_label_mutual_authentication">상호인증</string>
+    <string name="btn_label_download_device">단말기 다운로드</string>
+
+    <string name="btn_label_device_factory_reset">단말 공장 초기화</string>
+    <string name="btn_label_ip_settings">IP 설정</string>
+    <string name="btn_label_pwd_settings">비밀번호 변경</string>
+
+    <string name="tx_buisness_num">사업자번호</string>
+    <string name="tx_store_info">가맹점 정보</string>
+    <string name="tx_teminal_id">터미널 아이디</string>
+    <string name="tx_serial_num">시리얼 번호</string>
+
+    <string name="edtx_input_buisness_num">사업자번호 입력</string>
+    <string name="edtx_input_buisness_num_hint">사업자번호를 입력하세요.</string>
+    <string name="edtx_retry_buisness_num_hint">사업자번호를 재입력하세요.</string>
+    <string name="edtx_input_store_info_hint">가맹점정보를 입력하세요.</string>
+    <string name="edtx_input_teminal_id_hint">터미널 아이디를 입력하세요.</string>
+    <string name="edtx_input_serial_num_hint">시리얼 번호를 입력하세요.</string>
+    <string name="splog_title">자체보호로그</string>
+
+    <string name="tx_ip">IP</string>
+    <string name="tx_port">PORT</string>
+    <string name="edtx_input_ip_hint">211.192.167.87</string>
+    <string name="edtx_input_port_hint">10268</string>
+    <string name="title_ip_settings">IP Settings</string>
+
+    <string name="dialog_error_title_down_popup"> </string>
+    <string name="dialog_error_msg_down_popup">단말 다운로드를 실행하세요.</string>
+    <string name="dialog_error_title_integrity_popup"> </string>
+    <string name="dialog_error_msg_integrity_popup">A/S 하세요.</string>
+
+    <string name="dialog_error_msg_rooting_device">루팅 된 단말입니다.</string>
+    <string name="dialog_error_msg_unknown_device_authnum">단말인증번호를 알수없습니다.</string>
+    <string name="dialog_error_msg_can_not_transaction">거래를 진행 할 수 없습니다.</string>
+
+    <string name="update_fw_msg">펌웨어 업데이트 중... </string>
+    <string name="update_fw_title">펌웨어 업데이트</string>
+    <string name="update_fw_msg_complete">완료</string>
+    <string name="update_fw_fail_read_bin" >바이너리 파일을 읽어 올 수 없습니다.</string>
+    <string name="update_fw_fail_save_bin" >바이너리 파일을 저장하세요.</string>
+    <string name="update_fw_fail_permission_denied">외부저장소 접근 권한이 없습니다.</string>
+    <string name="result_download_success">다운로드 성공</string>
+    <string name="result_download_fail">다운로드 실패</string>
+
+    <string name="success">성공</string>
+    <string name="fail">실패</string>
+
+    <string name="result_icreader_make_data_fail">에러: IC Reader 데이터 만들기 실패</string>
+    <string name="result_icreader_data_fail">에러: IC Reader로부터 데이터 읽기 실패</string>
+    <string name="result_icreader_timeout">에러: IC Reader로부터 타임아웃</string>
+    <string name="result_icreader_connection_error">에러: IC Reader 연결 실패</string>
+
+    <string name="result_van_make_data_fail">에러: Van 데이터 만들기 실패</string>
+    <string name="result_van_data_fail">에러: Van host로부터 데이터 읽기 실패</string>
+    <string name="result_van_timeout">에러: Van host로부터 타임 아웃</string>
+    <string name="result_van_connection_error">에러: Van host 연결 실패</string>
+
+    <string name="vanhost_msg_cnnection_error">VAN host 연결 실패</string>
+    <string name="vanhost_msg_data_fail"> Van host로부터 데이터 읽기 실패 </string>
+    <string name="vanhost_msg_timeout"> Van host로부터 타임 아웃 </string>
+
+    <!-- Init toast message -->
+    <string name="toast_msg_device_info">단말정보 요청 완료</string>
+    <string name="toast_msg_device_info_not_have_fk">보안키가 없습니다. 보안키 업데이트를 진행하세요.</string>
+    <string name="toast_msg_selftest_ok">무결성 검증 성공</string>
+    <string name="toast_msg_network_cancel">망취소</string>
+
+    <!-- test btn text VanConn -->
+    <string name="btn_label_test_VanConn">테스트_VAN연결</string>
+    <string name="btn_label_test_VanDisConn">테스트_VAN연결끊기</string>
+
+    <!--Demon-->
+    <string name="demon_no_response_packet">데몬으로 부터 응답 없음.</string>
+    <string name="toast_msg_ic_card_redding">IC 카드를 읽어주세요.</string>
+    <string name="toast_msg_ms_card_redding">MS 카드를 읽어주세요.</string>
+    <string name="toast_msg_van_communicating">VAN 통신중 입니다.</string>
+    <string name="toast_msg_payment_successful">결제에 성공했습니다.</string>
+    <string name="toast_msg_payment_fail">결제에 실패했습니다.</string>
+    <string name="toast_msg_daemon_data_fail">데몬에 보낼 데이터가 없습니다.</string>
+
+
+    <!--Receipt print-->
+    <string name="print_payment_approval_title">결제 승인 완료</string>
+    <string name="print_payment_cancel_title">결제 취소 완료</string>
+
+    <string name="print_instalment_pay_in_full">일시불</string>
+    <string name="print_card_type_1">신용</string>
+    <string name="print_card_type_2">체크</string>
+    <string name="print_card_type_3">기프트</string>
+    <string name="print_card_type_4">선불</string>
+
+    <string name="print_start_star">**********"</string>
+    <string name="print_shop_name">가맹점명     :</string>
+    <string name="print_business_no">사업자번호  :</string>
+    <string name="print_shop_owoner_name">대표자명  :</string>
+    <string name="print_shop_tel_number">가맹점 전화번호:</string>
+    <string name="print_shop_address">가맹점 주소:</string>
+    <string name="print_date_time">거래일시     :</string>
+
+    <string name="print_type_1">--------------------------------------</string>
+    <string name="print_acquier_code">매입사코드     :</string>
+    <string name="print_acquier_name">매입사명  :</string>
+    <string name="print_card_type">카드구분     :</string>
+    <string name="print_balance">선불카드잔액     :</string>
+    <string name="print_instalment">할부개월    :</string>
+    <string name="print_card_no">카드번호   :</string>
+    <string name="print_approval_no">승인번호   :</string>
+    <string name="print_type_2">============================</string>
+    <string name="print_amount">판매금액    :</string>
+    <string name="print_fee">부가세    :</string>
+    <string name="print_surTax">봉사료     :</string>
+
+
+</resources>
